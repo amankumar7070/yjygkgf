@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>animation</title>
+		<style type="text/css">
+			#mainarea{
+				width:1200px;
+				height:360px;
+				background:red;
+				margin:0 auto;
+				
+			}
+			#slidearea{
+				width:1200px;
+				height:360px;
+				background:blue url('3.jpg');
+				position:relative;
+				//top:40px;
+				//left:20px;
+				float:left;
+				
+				overflow:hidden;
+			}
+			#slidearea1{
+				width:1200px;
+				height:240px;
+				background:yellow (255 255 255 0);
+				float:left;
+				position:relative;
+				//top:50px;
+				//background:rgb(255,255,255,0);
+				bottom:80px;
+				overflow:hidden;
+				//opacity:0;
+			
+			}
+			#slidearea img{
+				position:relative;
+				top:220px;
+				animation-name:jsr;
+				animation-duration:5s;
+				animation-iteration-count:4;
+				animation-delay:1s;
+				animation-timing-function:ease-in-out;
+				
+			}
+			@keyframes jsr{
+				0%{
+					transform:translatex(-300px);
+				}
+				100%{
+					transform:translatex(1300px);
+				}
+			}
+			#slidearea1 img{
+				position:relative;
+				bottom:80px;
+				animation-name:rnc;
+				animation-duration:5s;
+				animation-iteration-count:4;
+				animation-delay:1s;
+				animation-timing-function:ease-in-out;
+				
+			}
+			@keyframes rnc{
+				100%{
+					transform:translatex(-300px);
+				}
+				0%{
+					transform:translatex(1300px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id ="mainarea">
+			<div id="slidearea">
+				<img src="redcar2.png" width="280px" height="140px"/>
+			</div>
+			<div id="slidearea1">
+				<img src="bluecar2.png" width="280px" height="240px"/ >
+			</div>
+		</div>
+	</body>
+</html>
